@@ -47,6 +47,5 @@ module.exports = async function main() {
     }
 
     fs.writeFileSync("./data/creature.json", JSON.stringify(updatedCreature));
-    console.log(updatedCreature)
     return updatedCreature;
 }
