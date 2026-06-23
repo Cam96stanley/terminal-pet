@@ -1,0 +1,6 @@
+const fs = require("fs");
+
+module.exports = function updateHappiness(creature) {
+    creature.happiness = Math.min(100, creature.happiness + 30);
+    fs.writeFileSync("./data/creature.json", JSON.stringify(creature));
+}
